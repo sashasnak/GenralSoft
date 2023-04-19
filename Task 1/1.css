@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
 }
+
 header {
     padding: 30px;
     background: white;
@@ -10,10 +11,12 @@ header {
     align-items: center;
     justify-content: space-between;
 }
+
 header .right nav ul {
     display: flex;
     list-style-type: none;
 }
+
 header .right nav ul li {
     border-left: 1px solid grey;
     padding: 28px;
@@ -22,25 +25,100 @@ header .right nav ul li {
 
 header .right nav ul li:nth-child(1) {
     border: none;
-  }
+}
 
 header .right nav ul li:hover {
     color: rgb(55, 226, 238);
 }
 
-.logo{
+.logo {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-img {
+
+header div img {
     height: 75px;
     width: 75px;
     margin-right: 20px;
 }
+
 span {
     color: grey;
 }
+
 .name {
-    color:red;
+    color: red;
+}
+
+.section1 {
+    background-color: #eee;
+    display: flex;
+    justify-content: space-around;
+}
+.section1 .iphone img {
+    height: 300px;
+    width: 200px;
+    filter: drop-shadow(-90px 20px 5px #000);
+}
+
+.btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.btn button {
+    font-size: 15px;
+    color: white;
+    height: 44px;
+    width: 130px;
+    border-radius: 5px;
+    border: none;
+    background-color: red;
+}
+
+.section2 {
+    padding: 50px 44px 60px 24px;
+    background: #6dc5dd;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+
+.circle {
+    background-color: white;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+}
+.section2 .text {
+    width: 264px;
+}
+.section2 .text p {
+    padding: 24px 0px 24px 0px;
+}
+.section3 button {
+    font-size: 15px;
+    color: white;
+    height: 44px;
+    width: 70px;
+    border-radius: 5px;
+    border: none;
+    background-color: red;
+    margin-top: 15px;
+}
+.section3 div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 740px;
+    height: 250px;
+}
+.section3 img {
+    max-width: 250px;
+    max-height: 250px;
+    padding: 64px 30px 30px 30px;
+}
+.section3 h3 {
+    padding: 64px 0px 20px 0px;
 }
