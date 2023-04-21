@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    max-width: 1170px;
 }
 
 header {
@@ -19,7 +20,8 @@ header .right nav ul {
 
 header .right nav ul li {
     border-left: 1px solid grey;
-    padding: 28px;
+    padding-right: 15px;
+    padding-left: 15px;
     font-size: 18px;
 }
 
@@ -38,8 +40,8 @@ header .right nav ul li:hover {
 }
 
 header div img {
-    height: 75px;
-    width: 75px;
+    height: 45px;
+    width: 54px;
     margin-right: 20px;
 }
 
@@ -56,10 +58,10 @@ span {
     display: flex;
     justify-content: space-around;
 }
+
 .section1 .iphone img {
-    height: 300px;
-    width: 200px;
-    filter: drop-shadow(-90px 20px 5px #000);
+    height: 350px;
+    width: 380px;
 }
 
 .btn {
@@ -67,6 +69,7 @@ span {
     flex-direction: column;
     justify-content: space-evenly;
 }
+
 .btn button {
     font-size: 15px;
     color: white;
@@ -78,11 +81,11 @@ span {
 }
 
 .section2 {
-    padding: 50px 44px 60px 24px;
+    padding: 30px 4px 20px 0px;
     background: #6dc5dd;
     color: white;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .circle {
@@ -91,11 +94,20 @@ span {
     height: 64px;
     border-radius: 50%;
 }
+
 .section2 .text {
-    width: 264px;
+    max-width: 244px;
 }
+
 .section2 .text p {
     padding: 24px 0px 24px 0px;
+}
+
+.section3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
 }
 .section3 button {
     font-size: 15px;
@@ -107,18 +119,98 @@ span {
     background-color: red;
     margin-top: 15px;
 }
-.section3 div {
+
+.section3 img {
+    max-width: 100px;
+    max-height: 100px;
+}
+.section3 .man {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 200px;
+    max-width: 740px;
+}
+.section3 .man p {
+    max-width: 540px;
+}.section3 .man:nth-child(2) {
+    order: 1;
+}
+.section3 .rside {
+    max-width: 340px;
+}
+.section3 .rstop {
+    background-color: #003d48;
+    max-width: 340px;
+}
+
+.section3 .rsbot{
+    max-width: 340px;
+}
+.section3 .rsbot p{
+    border-bottom: 1px solid gray;
+}
+
+.section4 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    width: 740px;
-    height: 250px;
+    justify-content: center;
+    align-items: center;
+    background-color: #f77462ed;
+    color: white;
+    height: 200px;
+    max-width: 1170px;
 }
-.section3 img {
-    max-width: 250px;
-    max-height: 250px;
-    padding: 64px 30px 30px 30px;
+
+.section4 p {
+    max-width: 640px;
 }
-.section3 h3 {
-    padding: 64px 0px 20px 0px;
+
+.section5 p {
+    margin: 5px 30px 5px 30px;
+    padding: 15px 0px 15px 0px;
+    text-align: center;
+    font-size: 15px;
+    color: #6dc5dd;
+    border: 1px solid gray;
+    border-left: none;
+    border-right: none;
+}
+
+.section5 h2 {
+    padding: 60px 0px 0px 0px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.section6 {
+    width: 1170px;
+    height: 446px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.section6 .redd {
+    color: red;
+    padding: 10px 0px 20px 0px;
+}
+
+.section6 img {
+    height: 70px;
+    width: 70px;
+}
+
+.section6 .grey1 {
+    width: 540px;
+    height: 175px;
+    background-color: grey;
+}
+
+.section6 .grey2 {
+    width: 540px;
+    height: 175px;
+    background-color: grey;
 }
