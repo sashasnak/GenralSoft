@@ -1,5 +1,4 @@
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
     max-width: 1170px;
@@ -81,34 +80,66 @@ span {
 }
 
 .section2 {
-    padding: 30px 4px 20px 0px;
+    padding: 0px 30px 0px 30px;
     background: #6dc5dd;
     color: white;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+}
+
+.box {
+    display: flex;
+
+}
+
+.text {
+    max-width: 300;
+    max-height: 210;
+}
+
+.box .circle img {
+    height: 45px;
+    width: 32px;
 }
 
 .circle {
+    margin: 20px;
     background-color: white;
     width: 64px;
     height: 64px;
     border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.section2 .text {
-    max-width: 244px;
+.text h2 {
+    margin: 30px 0px 30px 0px;
 }
 
-.section2 .text p {
-    padding: 24px 0px 24px 0px;
+.text p {
+    margin: 30px 0px 30px 0px;
 }
 
 .section3 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
+ display: flex;
 }
+.section3 .man .men{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 30px 30px 30px;
+}
+.section3 .man .men .text-man{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 540px;
+    justify-content: space-between;
+    
+}
+/* .section3 .man .men .text-man p{
+    padding-top: 25px ;
+} */
 .section3 button {
     font-size: 15px;
     color: white;
@@ -117,40 +148,50 @@ span {
     border-radius: 5px;
     border: none;
     background-color: red;
-    margin-top: 15px;
+}
+.section3 img {
+    max-width: 200px;
+    max-height: 205px;
+    border-radius: 5px;
+    padding-right: 20px;
 }
 
-.section3 img {
-    max-width: 100px;
-    max-height: 100px;
-}
-.section3 .man {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    max-height: 200px;
-    max-width: 740px;
-}
-.section3 .man p {
-    max-width: 540px;
-}.section3 .man:nth-child(2) {
-    order: 1;
-}
+
 .section3 .rside {
+    padding: 60px 30px 60px 30px;
     max-width: 340px;
 }
+
 .section3 .rstop {
     background-color: #003d48;
+    padding: 40px 30px;
+    max-width: 340px;
+    border-radius: 5px;
+}
+.section3 .rstop h2{
+    color: #6dc5dd;
+}
+.section3 .rstop p{
+    color: white;
+}
+.section3 .rsbot {
     max-width: 340px;
 }
-
-.section3 .rsbot{
-    max-width: 340px;
+.rsbot{
+    border: 2px solid rgb(187, 184, 184);
+    padding: 40px 30px;
 }
-.section3 .rsbot p{
-    border-bottom: 1px solid gray;
+.section3 .rsbot p {
+    border-bottom: 1px solid rgb(187, 184, 184);
+    padding: 10px;
+    
 }
-
+.section3 .rsbot p:last-child{
+    border-bottom:none;
+}
+.section3 .rsbot p::first-letter{
+    color: red;
+}
 .section4 {
     display: flex;
     flex-wrap: wrap;
@@ -185,17 +226,25 @@ span {
 }
 
 .section6 {
-    width: 1170px;
-    height: 446px;
+    display: flex;
+}
+.section6 .calendar2{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    max-width: 570px;
 }
-
+.section6 .calendar {
+    margin: 30px;
+    display: flex;
+}
+.section6 .data{
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+}
 .section6 .redd {
     color: red;
-    padding: 10px 0px 20px 0px;
+    padding: 10px 0px 10px 0px;
 }
 
 .section6 img {
@@ -203,14 +252,43 @@ span {
     width: 70px;
 }
 
-.section6 .grey1 {
-    width: 540px;
-    height: 175px;
+.section6 .grey {
+    max-width: 540px;
+    max-height: 175px;
     background-color: grey;
+    margin: 30px;
 }
-
-.section6 .grey2 {
-    width: 540px;
-    height: 175px;
-    background-color: grey;
+.section6 .greyy .grey .circle-2{
+    max-width: 108px;
+    max-height: 108px;
+    background-color: white;
+}
+footer .foot{
+    padding-bottom: 30px;
+    border-bottom: 1px solid white;
+    background-color: #6dc5dd;
+    display: flex;
+    justify-content: space-between;
+}
+footer div:first-child{
+    padding-left: 30px;
+}
+footer div:last-child{
+    padding-right: 30px;
+}
+footer div h3{
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+footer div p {
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+footer .down {
+    padding: 30px;
+    background-color: #6dc5dd;
+    display: flex;
+    justify-content: space-between;
 }
